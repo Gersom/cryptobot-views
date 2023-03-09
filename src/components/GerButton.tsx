@@ -16,12 +16,17 @@ const styles = StyleSheet.create({
     borderRadius: 7,
     color: '#fff',
     width: '100%',
+    borderBottomColor: '#80D6F3',
+    borderRightColor: '#80D6F3',
+    borderBottomWidth: 3,
+    borderRightWidth: 3,
+    borderStyle: 'solid'
   },
   text: {
     color: '#282C34',
     paddingVertical: 20,
     textAlign: 'center',
     fontSize: 18,
-    fontWeight: 600
+    fontWeight: 'bold'
   }
 });

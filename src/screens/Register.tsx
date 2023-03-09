@@ -3,7 +3,7 @@ import { Pressable, StyleSheet, Text, View, Image } from 'react-native';
 import GerButton from './../components/GerButton';
 import GerTextInput from './../components/GerTextInput';
 
-export default function Login() {
+export default function Register() {
   return (
     <View style={styles.wrapper}>
       <View style={styles.container}>
@@ -12,26 +12,27 @@ export default function Login() {
             style={styles.imagelogo}
           />
         <Text style={styles.titleText}>
-          Bienvenido !</Text>
+          Registrate</Text>
         <Text style={styles.subtitleText}>
-          Inicia sesión para continuar</Text>
+          Rellena los campos para continuar</Text>
 
         <View style={styles.input}>
           <GerTextInput placehlr='Nombre de usuario' />
         </View>
         <View style={styles.input}>
+          <GerTextInput placehlr='Nombre' />
+        </View>
+        <View style={styles.input}>
+          <GerTextInput placehlr='E-mail' />
+        </View>
+        <View style={styles.input}>
           <GerTextInput placehlr='Contraseña' />
         </View>
-
-        <Pressable style={styles.buttonRecoverPass} onPress={() => null} >
-          <Text style={styles.recoverPass}>
-            ¿Has olvidado tu contraseña?</Text>
-        </Pressable>
         
         <View style={styles.submit}>
           <GerButton 
             onPress={() => {}}
-            title='Iniciar Sesión'/>
+            title='Registrarse'/>
         </View>
       </View>
     </View>
@@ -58,20 +59,20 @@ const styles = StyleSheet.create({
     borderStyle: 'solid'
   },
   imagelogo: {
-    height: 100,
-    width: 100,
+    height: 70,
+    width: 70,
     marginLeft: 'auto',
     marginRight: 'auto',
   },
   titleText: {
     fontSize: 24,
-    marginTop: 15,
+    marginTop: 10,
     textAlign: 'center',
     color: '#FFFFFF',
   },
   subtitleText: {
     marginTop: 3,
-    marginBottom: 30,
+    marginBottom: 20,
     textAlign: 'center',
     fontSize: 16,
     color: '#FFFFFF',
@@ -79,18 +80,6 @@ const styles = StyleSheet.create({
   input: {
     marginBottom: 20,
   },
-  buttonRecoverPass: {
-    marginLeft: 'auto',
-    borderBottomColor: '#999',
-    borderBottomStyle: 'solid',
-    borderBottomWidth: 1,
-  },
-  recoverPass: {
-    textAlign: 'right',
-    fontSize: 14,
-    color: '#FFFFFF',
-  },
   submit: {
-    marginTop: 30,
   },
 });
