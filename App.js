@@ -5,12 +5,14 @@ import Loading from './src/screens/Loading';
 import Login from './src/screens/Login';
 import Register from './src/screens/Register';
 import Home from './src/screens/Home';
+import Conexion from './src/screens/Conexion';
+import List from './src/screens/List';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Home />
+      <List />
     </View>
   );
 }
