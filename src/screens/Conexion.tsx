@@ -3,7 +3,7 @@ import { ScrollView , StyleSheet, Text, View, Image } from 'react-native';
 import GerButton from './../components/GerButton';
 import GerTextInput from './../components/GerTextInput';
 
-export default function Home() {
+export default function Conexion() {
   return ( 
     <ScrollView style={styles.scroll}>  
       <View style={styles.wrapper}>

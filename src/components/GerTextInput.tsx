@@ -2,11 +2,12 @@ import React from "react";
 import { TextInput, View, Text, StyleSheet } from "react-native";
 
 export default function GTextInput(props) {
-  const { placehlr = 'texto' } = props;
+  const { placehlr = 'texto', valueInput } = props;
   return (
     <View style={styles.container}>
       <TextInput 
         placeholder={placehlr}
+        value={valueInput}
         placeholderTextColor="#737B8C"
         style={styles.input} />
     </View>
